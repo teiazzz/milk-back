@@ -22,10 +22,17 @@
 在Railway项目的"Variables"选项卡中添加以下环境变量：
 
 ```
-SPRING_PROFILES_ACTIVE=railway
-JDBC_DATABASE_URL=jdbc:mysql://<你的数据库链接>/milk_store?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
-JDBC_DATABASE_USERNAME=<数据库用户名>
-JDBC_DATABASE_PASSWORD=<数据库密码>
+RAILWAY_ENVIRONMENT=railway
+```
+
+注意：默认情况下，Railway会自动为MySQL数据库提供以下环境变量，你不需要手动设置：
+```
+DATABASE_URL - 完整的数据库连接URL
+MYSQLUSER - 数据库用户名
+MYSQLPASSWORD - 数据库密码
+MYSQLDATABASE - 数据库名称
+MYSQLHOST - 数据库主机
+MYSQLPORT - 数据库端口
 ```
 
 可以选择添加其他环境变量：
